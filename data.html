@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DashBoard</title>
+</head>
+<body>
+<style>
+body {
+    padding: 0;
+    margin: 0;
+}
+table, td, th {
+    border : 1px solid #000000;
+    border-collapse : collapse;
+    padding: 15px;
+}
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}         
+@media screen and (min-width: 768px) {
+    .container-md {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+select {
+    font-size: 20px;
+}
+</style>
+<div class="container-md">
+    <br>
+    <h2>세종특별자치시시설관리공단_종량제봉투판매소</h2>
+    <a href="https://www.data.go.kr/data/15114518/fileData.do">공공 데이터 포털</a>
+    <h4 id="localText"></h4>
+    <br>
+    <div class="grid-4" id="local"></div>
+    <br>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">동선택</th>
+                <th scope="col">지정판매소명</th>
+                <th scope="col">도로명 주소</th>
+                <th scope="col">판매소 전화번호</th>
+            </tr>
+        </thead>
+        <tbody id="table1"></tbody>
+    </table>
+</div>
+<script src="js/ip.js"></script>
+</body>
+</html>
