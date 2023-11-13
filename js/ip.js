@@ -1,7 +1,7 @@
 /**
  * (c) Cuddly 2023 All Rights Reserved.
  */ 
-
+ 
 
 // url of api
 const url_api = "http://127.0.0.1:5500/data.json";
